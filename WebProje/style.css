@@ -67,3 +67,207 @@ header ul li a.active
     color: #2b1055;
     text-decoration: none;
 }
+body main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 90%;
+}
+.container1
+{
+    position: relative;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.container1 .card
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+.container1 .card:nth-child(even)
+{
+    flex-direction: column-reverse;
+}
+.container1 .card .imgBx
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #000;
+}
+.container1 .card .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container1 .card .content
+{
+    position: relative ;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 .card .content div
+{   
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 1000px)
+{
+    .container1
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+        margin: 50px;
+    }
+    .container1 .card
+    {
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    .container1 .card:nth-child(even)
+    {
+        flex-direction: row-reverse;
+    }
+    .container1 .card .imgBx,
+    .container1 .card .content
+    {
+        width: 50%;
+    }
+}
+@media (max-width:600px)
+{
+    .container1 .card
+    {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .container1 .card:nth-child(even)
+    {
+        flex-direction: column;   
+    }  
+    .container1 .card .imgBx,
+    .container1 .card .content
+    {
+        width: 100%;
+    }
+    .container1 .card .content
+    {
+        height: 200px;
+    }
+}
+
+.row
+{   
+    width: 102%;
+    position: relative;
+    background: #fff;
+    border-radius: 20px ;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+.row div #baslık,article h2
+{
+    padding-left: 90px;
+}
+.row div #metin
+{
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 18px; 
+}
+article p
+{
+    padding-left: 90px;
+    font-size: 18px; 
+}
+.row .span
+{
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.row .span::before
+{
+    content: 'HAKKIMDA';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-color: #2b1055;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.row .span::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #2b1055;
+    z-index: -1;
+    box-shadow: 140px -140px #2b1055;
+}
+.row #span1::before
+{
+    background-color: #b31111;
+    content: 'EĞİTİM';
+}
+.row #span1::after
+{
+    background-color: #b31111;
+    box-shadow: 140px -140px #b31111;
+}
+#tablo
+{  
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+tr
+{
+    text-align: center;
+    font-size: 18px;
+}
+thead th
+{
+    text-align: center; 
+    background-color: #b31111;
+    color: #fff;  
+}
+article
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article #cv
+{
+    margin-top: 60px;
+    padding-left: 20px;
+}
