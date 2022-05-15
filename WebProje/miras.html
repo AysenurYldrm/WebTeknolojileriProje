@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirasımız</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <title>Kişisel Web Sitem</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" target="_blank" id="logo">
+                        <img src="image/logo.png" alt="" id="logoimg">
+                        Parmenides
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#Eğitim">Eğitim</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Şehrim
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="şehrim.html#Tarih">Tarih</a></li>
+                                <li><a class="dropdown-item" href="şehrim.html#yemekler">Yemekler</a></li>
+                                <li><a class="dropdown-item" href="şehrim.html#gezilecekyerler">Gezilecek Yerler</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Mirasımız</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="api.html">İlgi Alanlarım</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="nav-item" > 
+                            <button onclick= "location.href='login.html'" type="submit" class="btn btn-primary"><ion-icon name="person-outline"></ion-icon> Giriş Yap</button>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" id="miras">
+        <br><br> <br><br> <br><br>
+        <div class="row">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="image/miras1.jpg">
+                    </div>
+                    <div class="swiper-slide" id="slide">
+                        <img src="image/miras2.jpg"  >
+                    </div>
+                    <div class="swiper-slide" id="slide">
+                        <img src="image/miras3.png" >
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <a name="miras"></a>
+            <span class="span" id="span6"></span>
+            <div class="col-md-12">
+                <h2 id="baslık">İstanbul Başakşehir FK</h2>
+                <p id="metin">
+
+                    İstanbul Başakşehir Futbol Kulübü veya sponsorluk anlaşması gereğince Medipol Başakşehir Futbol
+                    Kulübü, 1990 yılında
+                    dönemin İstanbul Belediye Başkanı Nurettin Sözen tarafından kurulan ve 2014 yılının Haziran ayına
+                    kadar İstanbul Büyükşehir
+                    Belediyespor bünyesinde faaliyet göstermesinin ardından, 4 Haziran 2014 tarihinde belediye
+                    bünyesinden ayrılıp faaliyetlerine
+                    futbol kulübü olarak devam etme kararı alarak ismini İstanbul Başakşehir Futbol Kulübü olarak
+                    değiştiren futbol kulübü.
+                    Kulüp maçlarını İstanbul'un Başakşehir ilçesinde yer alan Başakşehir Fatih Terim Stadyumu'nda
+                    oynamaktadır.
+                    Şu anki teknik direktörü Emre Belözoğlu'dur. 2019-20 Süper Lig sezonunda tarihinde ilk kez lig
+                    şampiyonu oldu.</p>
+
+                <h2 id="baslık">Tarihçe</h2>
+                <p id="metin">
+
+                    İstanbul Büyükşehir Belediyesi Spor Kulübü Derneği, 1990 yılında İstanbul Büyükşehir Belediye
+                    Başkanı Nurettin Sözen tarafından kuruldu.
+                    28 Kasım 1990'da Amatör liglerde mücadele eden İSKİspor,
+                    İETTspor ve İtfaiyespor, İBB Spor Kulübüne katılma kararı aldılar.
+                    18 Mayıs 1991'de Manisa Köy Hizmetleri'ni 2-1 yenen Turhan Özyazanlar yönetimindeki İSKİ,
+                    ligin bitmesine iki hafta kala 3. Lig'e yükselmeyi garantiledi. Haziran 1991'de ise İSKİspor
+                    değişime gitti
+                    ve Büyükşehir Belediyespor adını aldı ve 3. Lig'e yükselme hakkını yeni kurulan bu takım kullandı.
+
+                    7 Eylül 1991'de Büyükşehir Belediyespor tarihinin ilk maçına çıktı. Vefa SK'yi 3-2 yenen takımın ilk
+                    golünü Muammer Neziroğlu kaydetti.[5] Takım, ilk sezonunu dokuzuncu olarak tamamladı. 1992-93
+                    sezonunun 27. haftasında ligi birinci bitirmeyi garantilediler ve sezon sonunda 2. Lig'e
+                    yükseldiler.</p>
+
+                <h2 id="baslık"> 2. Lig / 1. Lig yılları</h2>
+                <p id="metin">
+                    1993-94 sezonunda tarihinde ilk kez 2. Lig mücadelesi vermeye başlayan Belediye takımı orta
+                    sıralarda mücadele ettikten sonra
+                    1995-96 yılında bir alt lige düştü. 1996-97 sezonunda ise 32 maçta 82 gol atarak grubunu birinci
+                    tamamlayarak tekrar 2. Lig'e yükseldi.
+                    Haluk Kulaçoğlu, 28 golle grubun en golcü ismi olurken, 3. Lig gol krallığında ise 2. oldu.
+
+                    1997-98 sezonunda ise iyi bir performans gösteren İBB, birinci etabı üçüncü, ikinci etabı ise
+                    birinci tamamlayarak yükselme play-off'una
+                    çıktı. İBB, play-off'larda finale kadar çıktı ancak Sakaryaspor’a son dakikalarda yediği bir golle
+                    kaybetti. Sakaryaspor'u yenseydi İstanbul
+                    Büyükşehir Belediyespor, futbolda 1. Lig’de oynayan ilk belediye takımı olacaktı.
+
+                    1998-99 sezonunda takım ilk kez yükselme grubuna yükselmeyi başardı. 2001 yılında play-off'larda
+                    yine Sakaryaspor'a elendi.
+                    2006-07 sezonuna kadar da ligi orta sıralarda tamamladı.</p>
+
+
+                <h2 id="baslık">Stadyum ve tesisler</h2>
+                <p id="metin"> İstanbul Başakşehir FK, kuruluş yılından itibaren Türkiye millî futbol takımı ve
+                    olimpiyatlar için yapılan yaklaşık 80.000 kapasiteli Atatürk Olimpiyat Stadyumu'nda oynamaya
+                    başlamıştır. 2013 Mart ayında ise kendine ait yeni bir stadyum açmak üzere şu an iç saha maçlarını
+                    oynadığı 17.800 kapasiteli Başakşehir Fatih Terim Stadyumu'nun inşaatına başlamıştır.
+
+                    Langa Tesisleri
+                    İstanbul BB'nin 3 ayrı tesisi bulunmaktadır. Langa Tesisleri 1995 yılında kurulmuştur.[8] Kamp
+                    eğitim tesislerinin otoparkı, restoranı, kondisyon salonu, saunası, dinlenme salonları mevcut olup
+                    kamp yapabilecek şekilde düzenlenmiştir. Kamp ve eğitim merkezi sadece futbol branşlarında hizmet
+                    verirken profesyonel futbol takımların antrenman hizmetine sunulmuştur. Sahada gece aydınlanmalı ve
+                    çim düzeylidir.
+
+                    Balat Tesisleri
+                    Balat Tesisleri ise Haliç'in kenarında Akşemsettin Parkı içinde hizmet vermekte olup İBB kulübünün
+                    futbolda tüm alt yapı çalışmalarının gerçekleştiği yerdir. Bu tesislerde ayrıca spor okulları da
+                    açılmaktadır. Ayrıca Fatih ve Eyüp'te amatör kulüp seviyesinde hizmet vermekte olan amatör
+                    kulüplerinin gece ve gündüz hizmetine sunulmaktadır. İBB Spor Kulübü'nün futbol branşında 500'ün
+                    üzerindeki lisanslı alt yapı sporcularına bu tesiste hizmet verilmektedir.
+
+                    Cebeci Tesisleri
+                    Cebeci Tesisleri ise diğer çoğu amatör branş için kullanılmaktadır. Ayrıca amatör bir suni çimli
+                    futbol sahası bulunmaktadır.</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+    <footer>
+        <div class="container">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>@2022 By Fatih Durmaz | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

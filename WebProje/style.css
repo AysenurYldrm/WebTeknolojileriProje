@@ -67,6 +67,17 @@ header ul li a.active
     color: #2b1055;
     text-decoration: none;
 }
+header ul li button
+{
+   
+    font-size: 1em;
+    padding: 12px 15px;
+    
+    color: #2b1055;
+    border-radius: 20px ;
+    padding-right: 0;
+    padding-left: 0;
+}
 body main
 {
     display: flex;
@@ -168,7 +179,109 @@ body main
         height: 200px;
     }
 }
+.container3 
+{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.container3 .card1
+{
+    position: relative;
+    max-width: 450px;
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+.container3 .card1 .imgBx1
+{
+    max-width: 100%;
+    flex: 0 0 150px;
+}
+.container3 .card1 .imgBx1 img
+{
+    max-width: 150px;
+}
+.container3 .card1 .content1
+{
+    margin-left: 20px;
+}
+@media(max-width: 991px)
+{
+    .container3
+    {
+        flex-direction: column;
+    }
+}
+@media(max-width: 768px)
+{
+    .container3
+    {
+        flex-direction: column;
+    }
+    .container3 .card1
+    {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    .container3 .card1 .imgBx1
+    {
+        max-width:100% ;
+    }
+    .container3 .card1 .content1
+    {
+    margin-left: 0px;
+    }
+}
+#span5
+{
+    top: -10px;
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(-90deg) translateY(-270px) translateX(-270px);
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    background-color: #ab2d57;
+    border-radius: 20px;
+}
+@media(max-width: 1000px)
+{
+    #span5{
+        transform: rotate(0deg);
+    }
+}
+.swiper-wrapper
+ {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.swiper-wrapper .swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 450px;
+}
+
+.swiper-wrapper .swiper-slide img
+{
+    display: block;
+    width: 100%;
+}
 .row
 {   
     width: 102%;
@@ -203,7 +316,9 @@ article p
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    z-index: 100;
 }
+
 .row .span::before
 {
     content: 'HAKKIMDA';
@@ -243,6 +358,29 @@ article p
     background-color: #b31111;
     box-shadow: 140px -140px #b31111;
 }
+.row #span4::before
+{
+    background-color: #8e754a;
+    content: 'TARİHÇE';
+}
+
+.row #span4::after
+{
+    background-color: #5b3f0d;
+    box-shadow: 140px -140px #5b3f0d;
+}
+.row #span6::before
+{
+    background-color: #4a8e64;
+    content: 'MİRASIMIZ';
+}
+
+.row #span6::after
+{
+    background-color: #0d5b44;
+    box-shadow: 140px -140px #0d5b44;
+}
+
 #tablo
 {  
     margin-left: 10px;
@@ -270,4 +408,237 @@ article #cv
 {
     margin-top: 60px;
     padding-left: 20px;
+}
+.container2 
+{
+    width: 80%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    
+}
+.container2 .row
+{
+    padding-left: 45px;
+}
+.container2 .hexagon
+{
+   position: relative;
+   width: 350px;
+   height: 400px;
+   margin: 50px 20px 70px;
+}
+.container2 .hexagon::before
+{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0,0,0,0.15), transparent,transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.container2 .hexagon:hover::before
+{
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+.container2 .hexagon .shape
+{   
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000 ;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    transition: 0.5s;
+}
+.container2 .hexagon:hover .shape
+{
+    transform: translateY(-30px);
+}
+.container2 .hexagon .shape img
+{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container2 .hexagon .shape .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg,#2b1055, rgba(3,169,244,0.5));
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}   
+.container2 .hexagon:hover .shape .content
+{
+    opacity: 1;
+}
+.row #span2::before
+{
+    background-color: #e3aa19;
+    content: 'HOBİLER';
+}
+.row #span2::after
+{
+    background-color: #e3aa19;
+    box-shadow: 140px -140px #e3aa19;
+}
+#panel 
+{
+    padding-left: 90px;
+    padding-top: 50px;
+}
+#panel h3{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row #span3::before
+{
+    background-color: #11893b;
+    content: 'SPORLAR';
+}
+.row #span3::after
+{
+    background-color: #11893b;
+    box-shadow: 140px -140px #11893b;
+}
+footer 
+{ 
+    position: relative;
+    width: 100%;
+    background: #2b1055;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon, footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li, footer .menu li
+{
+    list-style: none;
+}
+footer .social_icon li a
+{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover
+{
+    transform: translateY(-10px);
+}
+footer .menu li a
+{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover
+{
+    opacity: 1;
+}
+footer p
+{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(image/wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave 
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
 }
