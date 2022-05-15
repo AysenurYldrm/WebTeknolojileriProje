@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="iletişim.css">
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2> İLETİŞİM</h2>
+            <p>Bizimle İletişime Geçebilirsiniz...</p>
+
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></div>
+                    <div class="text">  
+                        <h3>ADRES</h3>
+                        <p>Sakarya Üniversitesi <br> Serdivan/SAKARYA</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="text">  
+                        <h3>TELEFON</h3>
+                        <p> 0542-844-1381</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="text">  
+                        <h3>E-MAIL</h3>
+                        <p>aysenur.yildirim14@ogr.sakarya.edu.tr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="form.php" method="POST" >
+                    <h2>Mesajınızı Bırakın</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" id="name" required>
+                        <span>Adınız</span>
+                        <small class="error"></small>
+   
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" required>
+                        <small class="error"></small>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea id="message" name="message" required></textarea>
+                        <small class="error"></small>
+                        <span>Mesajınız</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Gönder" name="Gönder" >
+                    </div>
+                </form>
+
+            </div>
+        </div>
+     </section>
+
+     <script src="script.js"></Script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
